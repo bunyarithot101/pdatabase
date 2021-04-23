@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/detail_bottom_nav_i_info"
+        android:enabled="true"
+        android:icon="@drawable/error"
+
+        android:title="@string/info"/>
+    <item
+        android:id="@+id/detail_bottom_nav_i_move"
+        android:enabled="true"
+        android:icon="@drawable/onload"
+        android:title="@string/move"/>
+</menu>
+

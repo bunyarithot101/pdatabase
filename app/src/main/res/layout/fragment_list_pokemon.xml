@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListPokemonFragment">
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_poke_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="50dp"
+                android:background="@drawable/shadow">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:fontFamily="@font/lato"
+                            android:padding="5dp"
+                            android:text="@string/app_name"
+                            android:textAllCaps="true"
+                            android:textColor="@color/TitleBlack"
+                            android:textSize="@dimen/title" />
+
+                        <SearchView
+                            android:id="@+id/search_input"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:iconifiedByDefault="false"
+                            android:queryHint="@string/search" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <!--                            <Button-->
+                            <!--                                android:id="@+id/list_dialogs_trigger"-->
+                            <!--                                android:layout_width="wrap_content"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:layout_margin="5dp"-->
+                            <!--                                android:layout_marginStart="15dp"-->
+                            <!--                                android:fontFamily="@font/rocknrollone"-->
+                            <!--                                android:shadowColor="@color/shadow"-->
+                            <!--                                android:shadowRadius="100"-->
+                            <!--                                android:text="Generation"-->
+                            <!--                                app:backgroundTint="@color/headerBtn" />-->
+
+                            <Button
+                                android:id="@+id/list_dialogs_gen_trigger"
+                                style="@style/Widget.MaterialComponents.Button.TextButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_marginStart="15dp"
+                                android:fontFamily="@font/lato"
+                                android:text="ALL Generation"
+                                android:textColor="@color/headerBtn"
+                                android:textSize="@dimen/btn"
+                                app:strokeColor="@color/headerBtn"
+                                app:strokeWidth="2dp" />
+
+                            <Button
+                                android:id="@+id/list_dialogs_type_trigger"
+                                style="@style/Widget.MaterialComponents.Button.TextButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:layout_marginStart="15dp"
+                                android:fontFamily="@font/lato"
+                                android:text="ALL Type"
+                                android:textColor="@color/headerBtn"
+                                android:textSize="@dimen/btn"
+                                app:strokeColor="@color/headerBtn"
+                                app:strokeWidth="2dp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/nodata_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/lato"
+                    android:gravity="center_vertical"
+                    android:padding="30dp"
+                    android:text="@string/nodatafound"
+                    android:textAlignment="center"
+                    android:textSize="24sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.recyclerview.widget.RecyclerView
+
+                            android:id="@+id/recyclerviewPokeList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layoutAnimation="@anim/layout_animation_fall_down"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+
+                        <com.google.android.material.progressindicator.CircularProgressIndicator
+                            android:id="@+id/progress_RecyclerView_ListPoke"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|center_horizontal|center_vertical"
+                            android:indeterminate="true"
+                            app:indicatorColor="#737373"
+                            app:indicatorInset="2.0dp"
+                            app:indicatorSize="80dp"
+                            app:trackThickness="18dp" />
+                    </FrameLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+<!--      FLOAT BUTTON  -->
+<!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--            android:id="@+id/floating_action_button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom|right"-->
+<!--            android:layout_margin="16dp"-->
+<!--            android:contentDescription="@string/text"-->
+<!--            app:srcCompat="@drawable/abc_vector_test"-->
+<!--            tools:visibility="gone" />-->
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

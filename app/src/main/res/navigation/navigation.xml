@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.bbbdev.pokebase.introFragment"
+        android:label="fragment_intro"
+        tools:layout="@layout/fragment_intro" >
+        <action
+            android:id="@+id/action_introFragment_to_listPokemonFragment"
+            app:destination="@id/listPokemonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listPokemonFragment"
+        android:name="com.bbbdev.pokebase.ListPokemonFragment"
+        android:label="fragment_list_pokemon"
+        tools:layout="@layout/fragment_list_pokemon" >
+        <action
+            android:id="@+id/action_listPokemonFragment_to_detailPokemonFragment"
+            app:destination="@id/detailPokemonFragment"
+            app:enterAnim="@anim/bottom_to_top" />
+        <action
+            android:id="@+id/action_listPokemonFragment_to_notFoundFragment"
+            app:destination="@id/notFoundFragment"
+            app:enterAnim="@anim/slide_left_to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPokemonFragment"
+        android:name="com.bbbdev.pokebase.detailPokemonFragment"
+        android:label="fragment_detail_pokemon"
+        tools:layout="@layout/fragment_detail_pokemon" >
+        <action
+            android:id="@+id/action_detailPokemonFragment_to_listPokemonFragment"
+            app:destination="@id/listPokemonFragment" />
+        <argument
+            android:name="pokemon"
+            app:argType="com.bbbdev.pokebase.pokedata.pokemon" />
+        <action
+            android:id="@+id/action_detailPokemonFragment_self"
+            app:destination="@id/detailPokemonFragment"
+            app:enterAnim="@anim/bottom_to_top" />
+    </fragment>
+    <fragment
+        android:id="@+id/notFoundFragment"
+        android:name="com.bbbdev.pokebase.notFoundFragment"
+        android:label="fragment_not_found"
+        tools:layout="@layout/fragment_not_found" >
+        <action
+            android:id="@+id/action_notFoundFragment_to_listPokemonFragment"
+            app:destination="@id/listPokemonFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,50 @@
+<resources>
+<!--    <string name="app_name">Pokebase</string>-->
+    <string name="app_name">Pdatabase</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shorttext">Lorem </string>
+    <string name="text">Lorem Ipsum </string>
+    <string name="longtext"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry is standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has</string>
+    <string name="dialogs_gen">Select genetation </string>
+    <string name="dialogs_type">Select Type </string>
+    <string name="nodatafound"> No Pokemon found..  \nTry a different namd or number</string>
+    <string name="error"> No Pokemon found.. </string>
+
+    <string name="search"> Search.. </string>
+
+    <string name="info"> Info </string>
+
+    <string name="move"> Move </string>
+    <string name="power"> Power </string>
+    <string name="acc"> Accuracy</string>
+    <string name="type"> Type</string>
+
+    <string name="species"> Species </string>
+    <string name="stas"> Base Stats </string>
+    <string name="evolchain"> Evolution Chain </string>
+    <string name="base_hp">HP</string>
+    <string name="base_attack">Attack</string>
+    <string name="base_defense">Defense</string>
+    <string name="base_sp_attack">SP.Attack</string>
+    <string name="base_sp_defense">SP.Defense</string>
+    <string name="base_spd">Speed</string>
+
+
+    <string-array name="generation_array">
+        <item>Gen 1</item>
+        <item>Gen 2</item>
+        <item>Gen 3</item>
+        <item>Gen 4</item>
+        <item>Gen 5</item>
+        <item>Gen 6</item>
+        <item>Gen 7</item>
+        <item>Gen 8</item>
+    </string-array>
+
+    <string-array name="type_array">
+        <item>normal</item>
+    </string-array>
+
+
+</resources>

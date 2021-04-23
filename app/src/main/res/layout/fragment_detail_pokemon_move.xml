@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".detailPokemonMoveFragment">
+
+
+    <TableLayout
+        android:id="@+id/table_heading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/table_move"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:text="@string/move"
+
+                android:textAlignment="center"
+                android:textColor="@color/thirdTextColor"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_column="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@color/table_power"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:paddingEnd="5dp"
+                android:text="@string/power"
+                android:textAlignment="center"
+                android:textColor="@color/thirdTextColor"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@color/table_acc"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:paddingEnd="5dp"
+                android:text="@string/acc"
+                android:textAlignment="center"
+                android:textColor="@color/thirdTextColor"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_column="2"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="@drawable/table_type"
+                android:fontFamily="@font/lato"
+                android:gravity="center"
+                android:paddingEnd="5dp"
+                android:text="@string/type"
+                android:textAlignment="center"
+                android:textColor="@color/thirdTextColor"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_pokemon_move"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="60dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/table_heading_layout">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

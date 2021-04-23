@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_info_playground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".detailPokemonInfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/species_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center">
+
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    android:fadingEdgeLength="6dp"
+                    app:cardElevation="2dp"
+                    app:cardMaxElevation="3dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/species_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="0dp"
+                            android:background="#FFFFFF"
+                            android:elevation="10dp"
+                            android:fontFamily="@font/lato"
+                            android:padding="10dp"
+                            android:text="@string/species"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/species_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/lato"
+                            android:lineSpacingExtra="3dp"
+                            android:padding="10dp"
+                            android:paddingStart="20dp"
+                            android:paddingEnd="20dp"
+                            android:text="@string/longtext"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="true"
+                            android:textSize="12sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/species_title" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </FrameLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:fadingEdgeLength="6dp"
+                app:cardElevation="2dp"
+                app:cardMaxElevation="3dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/stas"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/lato"
+                        android:padding="5dp"
+                        android:text="@string/stas"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <FrameLayout
+                android:id="@+id/stats_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/base_hp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/stat_black"
+                            android:fontFamily="@font/lato"
+                            android:padding="5dp"
+                            android:text="@string/base_hp"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/base_atk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/stat_black"
+                            android:fontFamily="@font/lato"
+                            android:padding="5dp"
+                            android:text="@string/base_attack"
+                            android:textAlignment="center"
+
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/base_def"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/stat_black"
+                            android:fontFamily="@font/lato"
+                            android:padding="5dp"
+                            android:text="@string/base_defense"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/base_sp_atk"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/stat_black"
+                            android:fontFamily="@font/lato"
+                            android:padding="5dp"
+                            android:text="@string/base_sp_attack"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/base_sp_def"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/stat_black"
+                            android:fontFamily="@font/lato"
+                            android:padding="5dp"
+                            android:text="@string/base_sp_defense"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/base_spd"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/stat_black"
+                            android:fontFamily="@font/lato"
+                            android:padding="5dp"
+                            android:text="@string/base_spd"
+                            android:textAlignment="center"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/base_hp_stat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/base_black"
+                            android:fontFamily="@font/lato"
+                            android:padding="5dp"
+                            android:text="@string/text"
+                            android:textAlignment="viewEnd"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/base_atk_stat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/base_black"
+                            android:fontFamily="@font/lato"
+                            android:padding="5dp"
+                            android:text="@string/text"
+                            android:textAlignment="viewEnd"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/base_def_stat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/base_black"
+                            android:fontFamily="@font/lato"
+                            android:padding="5dp"
+                            android:text="@string/text"
+                            android:textAlignment="viewEnd"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/base_sp_atk_stat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/base_black"
+                            android:fontFamily="@font/lato"
+                            android:padding="5dp"
+                            android:text="@string/text"
+                            android:textAlignment="viewEnd"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/base_sp_def_stat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/base_black"
+                            android:fontFamily="@font/lato"
+                            android:padding="5dp"
+                            android:text="@string/text"
+                            android:textAlignment="viewEnd"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/base_spd_stat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/base_black"
+                            android:fontFamily="@font/lato"
+                            android:padding="5dp"
+                            android:text="@string/text"
+                            android:textAlignment="viewEnd"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/evolution_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_evol_tile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:fadingEdgeLength="6dp"
+                        app:cardElevation="2dp"
+                        app:cardMaxElevation="3dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/evol_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/lato"
+                                android:padding="5dp"
+                                android:text="@string/evolchain"
+                                android:textAlignment="center"
+                                android:textSize="18sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                    <LinearLayout
+                        android:id="@+id/linearEvo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:id="@+id/framge_re_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recycler_for_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/framge_re_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recycler_for_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </RelativeLayout>
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/framge_re_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/recycler_for_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </RelativeLayout>
+
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

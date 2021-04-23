@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pokemon_card"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="8dp"
+    android:fadingEdgeLength="6dp"
+    app:cardElevation="2dp"
+    app:cardMaxElevation="3dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="0dp">
+        <!-- Title, secondary and supporting text -->
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/shorttext"
+                    android:textSize="@dimen/card_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/lName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/text"
+                    android:textSize="@dimen/card_text"
+                    app:layout_constraintStart_toEndOf="@+id/lNumber"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/lNumber">
+                    <!-- Chips can be declared here, or added dynamically. -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_test_A"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/lato"
+                            android:text="@string/text"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/cardText"
+                            android:textSize="@dimen/card_sub_text"
+                            app:chipStrokeColor="@color/cardText"
+                            app:chipStrokeWidth="1dp"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip_test_B"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/lato"
+                            android:text="@string/text"
+                            android:textAlignment="center"
+                            android:textAllCaps="true"
+                            android:textColor="@color/cardText"
+                            android:textSize="@dimen/card_sub_text"
+                            android:visibility="visible"
+                            app:chipStrokeColor="@color/cardText"
+                            app:chipStrokeWidth="1dp"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.chip.ChipGroup>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/shadowArtwork"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0">
+
+            <ImageView
+                android:id="@+id/artwork"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center|right|center_vertical"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/card_onload"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:indeterminate="true"
+                tools:visibility="gone" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+

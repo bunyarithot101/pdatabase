@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="appbg"> #de982c</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="shadow">#bcbcbc</color>
+
+    <color name="header">#D6DBDF</color>
+    <color name="headerBtn">#2980B9</color>
+
+
+    <color name="type_normal">#7bbd8c</color>
+
+<!--    <color name="type_black">#2C3E50</color>-->
+    <color name="type_black">#557594</color>
+    <color name="type_green">#52BE80</color>
+    <color name="type_red">#CD6155</color>
+    <color name="type_blue">#5499C7</color>
+    <color name="type_brown">#DC7633</color>
+    <color name="type_gray">#99A3A4</color>
+    <color name="type_pink">#ff748a</color>
+    <color name="type_purple">#A569BD</color>
+    <color name="type_white">#fff2e5</color>
+    <color name="type_yellow">#F4D03F</color>
+
+    <color name="type_black_fade">#D5D8DC</color>
+    <color name="type_blue_fade">#D4E6F1</color>
+    <color name="type_brown_fade">#FAE5D3</color>
+    <color name="type_gray_fade">#D6DBDF</color>
+    <color name="type_green_fade">#D4EFDF</color>
+    <color name="type_pink_fade">#ffd6dd</color>
+    <color name="type_purple_fade">#E8DAEF</color>
+    <color name="type_red_fade">#F2D7D5</color>
+    <color name="type_yellow_fade">#FCF3CF</color>
+    <color name="type_white_fade">#fffdfc</color>
+
+
+    <color name="type_black_fader">#577A9E</color>
+    <color name="type_blue_fader">#84B6D7</color>
+    <color name="type_brown_fader">#E7A273</color>
+    <color name="type_gray_fader">#BEC5C5</color>
+    <color name="type_green_fader">#97D8B3</color>
+    <color name="type_pink_fader">#FFADBA</color>
+    <color name="type_purple_fader">#BC8ECC</color>
+    <color name="type_red_fader">#DF9890</color>
+    <color name="type_yellow_fader">#F7DE78</color>
+    <color name="type_white_fader">#FFCC99</color>
+
+
+    <color name="table_move"> #BEC5C5 </color>
+    <color name="table_power"> #BEC5C5 </color>
+    <color name="table_acc"> #BEC5C5 </color>
+    <color name="table_type"> #BEC5C5 </color>
+
+
+    <color name="normal">#a8a878</color>
+    <color name="fighting" >#c03028</color>
+    <color name="flying" >#a890f0</color>
+    <color name="poison" >#b55aa5</color>
+    <color name="ground" >#e0c068</color>
+    <color name="rock" >#bda55a</color>
+    <color name="bug" >#a8b820</color>
+    <color name="ghost" >#6363b5</color>
+    <color name="steel" >#b8b8d0</color>
+    <color name="fire" >#f08030</color>
+    <color name="water" >#6890f0</color>
+    <color name="grass" >#78c850</color>
+    <color name="electric" >#f8d030</color>
+    <color name="psychic" >#f85888</color>
+    <color name="ice" >#98d8d8</color>
+    <color name="dragon" >#7038f8</color>
+    <color name="dark" >#735a4a</color>
+    <color name="fairy" >#ee99ac</color>
+    <color name="unknown" >#3d3d3d</color>
+    <color name="shadow_type" >#3d3d3d</color>
+
+    <color name="card_type_grass">#52BE80</color>
+    <color name="card_type_fire">#CD6155</color>
+
+    <color name="cardText">#212121</color>
+    <color name="TitleBlack">#212121</color>
+
+
+
+    <color name="primaryColor">#eeeeee</color>
+    <color name="primaryLightColor">#bcbcbc</color>
+    <color name="primaryDarkColor">#ffffff</color>
+
+    <color name="secondaryColor">#b71c1c</color>
+    <color name="secondaryLightColor">#f05545</color>
+    <color name="secondaryDarkColor">#7f0000</color>
+
+    <color name="primaryTextColor">#b71c1c</color>
+    <color name="secondaryTextColor">#eeeeee</color>
+
+    <color name="thirdTextColor">#212121</color>
+
+</resources>
